@@ -40,7 +40,7 @@ async def leave(ctx):
 
 @client.command()
 async def ttshelp(ctx):
-    """ send useless help informatin """
+    """ help command """
     ttsHelpEmbed = discord.Embed(type="rich", title="v.ttshelp",description="v.ttshelp")
     ttsHelpEmbed.add_field(name="How to use the command", value="v.tts requires at least 2 arguments: ttsType and message. ttsType determines what type of soundfile will be \
         used, and message is a word from the list of a given type (full types and lists can be found at https://salty.gay/vox/ or in the Half-Life sounds folder) Any words after \
@@ -56,7 +56,7 @@ async def join(ctx):
 
 @client.command()
 async def quit(ctx):
-    ''' correctly quit the bot '''
+    """ correctly quit the bot """
     if str(ctx.author.id) == "144781413558910976":
         await client.close()
 

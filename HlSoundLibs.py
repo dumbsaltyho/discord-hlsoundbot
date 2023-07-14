@@ -2,15 +2,15 @@ import sox
 import os
 
 class BotErrorGeneric(Exception):
-    ''' generic bot error, don't use '''
+    """ generic bot error, don't use """
     pass
 
 class BotErrorTooManyArgs(Exception):
-    ''' too many arguments were passed into the list, ie. user did not correctly specify ttsType '''
+    """ too many arguments were passed into the list, ie. user did not correctly specify ttsType """
     pass
 
 class BotErrorTtsTypeDoesNotExist(Exception):
-    ''' ttsType / fileLocation does not exist '''
+    """ ttsType / fileLocation does not exist """
     pass
 
 class HlSoundGen():
